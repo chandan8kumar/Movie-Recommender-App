@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
-df = pd.read_csv('dataset\IMDB-Movie-Data.csv')
+df = pd.read_csv('IMDB-Movie-Data.csv')
 df['lowerTitle'] = pd.Series(str.lower(i) for i in df.Title)
 count = CountVectorizer(stop_words='english')
 count_matrix = count.fit_transform(df.Description)
