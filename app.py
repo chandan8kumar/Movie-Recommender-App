@@ -1,5 +1,4 @@
 import flask
-# from flask import *
 from flask import Flask
 from flask import render_template
 import pandas as pd
